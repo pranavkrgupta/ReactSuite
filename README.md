@@ -20,7 +20,6 @@ The To-Do List API is a RESTful API that allows users to manage their tasks effi
 - **bcrypt**: Library for hashing passwords
 - **jsonwebtoken (JWT)**: For generating and verifying tokens
 - **dotenv**: For managing environment variables
-- **Cors**: Middleware to enable Cross-Origin Resource Sharing
 
 ## Installation
 
@@ -34,6 +33,7 @@ The To-Do List API is a RESTful API that allows users to manage their tasks effi
 
     ```bash
     cd todo-list-api
+    cd Server
     ```
 
 3.  Install dependencies:
@@ -45,13 +45,13 @@ The To-Do List API is a RESTful API that allows users to manage their tasks effi
 4.  Create a .env file in the root directory and add your MongoDB connection string and JWT secret:
 
     ```bash
-        MONGO_URI=your_mongo_db_connection_string
-        JWT_SECRET=your_jwt_secret
+    MONGO_URI=your_mongo_db_connection_string
+    JWT_SECRET=your_jwt_secret
     ```
 
 ## Usage
 
-1. Start the server: `npm start`
+1. Start the server: `npx nodemon server.js`
 
 2. The API will be running on `http://localhost:5000`.
 
